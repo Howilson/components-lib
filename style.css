@@ -11,12 +11,15 @@ header{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     color: rgb(131, 95, 131);
 }
-.nav ul{
-    display: flex;
-    justify-content: space-between;
-}
 .logo{
 width: 10%;
+}
+ul{
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+display: inline-block;
 }
 section.second {
     display: grid;
@@ -28,7 +31,7 @@ section.second {
 section img{
     width: 10%;
 }
-.button-a{
+.button-1{
         min-width: 300px;
         min-height: 60px;
         font-family: 'Nunito', sans-serif;
@@ -49,7 +52,7 @@ section img{
         padding: 10px;
         }
       
-      .button-a::before {
+      .button-1::before {
       content: '';
         border-radius: 1000px;
         min-width: calc(300px + 12px);
@@ -64,7 +67,7 @@ section img{
         transition: all .3s ease-in-out 0s;
       }
       
-      .button-a:hover, .button-a:focus {
+      .button-1:hover, .button-a:focus {
         color: #313133;
         transform: translateY(-6px);
       }
