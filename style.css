@@ -29,7 +29,7 @@ section.nav1{
   grid-gap: 2rem;
   margin-bottom: 2rem;
   padding-top: 20px;
-  background-color: rgb(154, 130, 177);
+  background-color: rgb(181, 176, 185);
 }
 section.nav2 {
     display: grid;
@@ -37,7 +37,7 @@ section.nav2 {
     grid-gap: 2rem;
     margin-bottom: 2rem;
     padding-top: 20px;
-    background-color: #e9c1d9;
+    background-color: #d0cbce;
 }
 section img{
     width: 10%;
@@ -86,33 +86,4 @@ section img{
       button:hover::before, button:focus::before {
         opacity: 1;
       }
-      
-      .switch-wrap {
-        cursor: pointer;
-        background: #15273b;
-        padding: $padding;
-        width: $width;
-        height: $height;
-        border-radius: $height / 2;
-      }
-        input {
-          position: absolute;
-          opacity: 50px;
-          width: 50px;
-          height: 50px;
-      }
-      .switch-wrap {
-        height: 100%;
-        display: grid;
-        grid-template-columns: 0fr 1fr 1fr;
-        transition: .2s;
-          content: '';
-          border-radius: 50%;
-          background: #ccc;
-          grid-column: 2;
-          transition: background .2s;
-        }
-      input:checked {
-          grid-template-columns: 1fr 1fr 0fr; 
-      }
-      
+    
