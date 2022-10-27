@@ -1,41 +1,125 @@
 *{
-    /* margin: 0; */
+box-sizing: border-box;
+  /* margin: 0; */
     /* padding: 0; */
 }
 body{
-  background-color: rgba(0, 0, 0, 0.811);
+  background-color: black;
 }
 header{
     text-align:center;
     font-size: 50px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    color: rgb(245, 245, 245);
+    
+    background: linear-gradient(
+    to right, 
+    rgb(174, 0, 209), 
+    rgb(3, 247, 206)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+
 
 }
 nav ul {
   display: flex;
   justify-content: space-around;
   list-style: none;
-  
 }
 ul{
   display: inline-block;
   list-style-type: none;
   margin: 0;
   padding: 0;
-
 }
 .nav1 a {
   color: #3e5744;
   text-decoration: none;
+
 }
+}
+
+body {
+  background: #272727;
+  font-family: "Montserrat", sans-serif;
+}
+
+.navMenu {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.navMenu a {
+  color: #f6f4e6;
+  text-decoration: none;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  font-weight: 500;
+  display: inline-block;
+  width: 80px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.navMenu a:hover {
+  color: #caf874;
+}
+
+.navMenu .dot {
+  width: 6px;
+  height: 6px;
+  background: #78ff66;
+  border-radius: 50%;
+  opacity: 0;
+  -webkit-transform: translateX(30px);
+  transform: translateX(30px);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.navMenu a:nth-child(1):hover ~ .dot {
+  -webkit-transform: translateX(30px);
+  transform: translateX(30px);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  opacity: 1;
+}
+
+.navMenu a:nth-child(2):hover ~ .dot {
+  -webkit-transform: translateX(110px);
+  transform: translateX(110px);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  opacity: 1;
+}
+
+.navMenu a:nth-child(3):hover ~ .dot {
+  -webkit-transform: translateX(200px);
+  transform: translateX(200px);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  opacity: 1;
+}
+
+.navMenu a:nth-child(4):hover ~ .dot {
+  -webkit-transform: translateX(285px);
+  transform: translateX(285px);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  opacity: 1;
+}
+
 section.nav1{
-  display: grid; 
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 2rem;
+  display: flex; 
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 10%;
   margin-bottom: 2rem;
-  padding-top: 20px;
-  background-color: rgb(227, 203, 241);
+  background-color: rgb(51, 7, 87);
 }
 section.nav2 {
     display: grid;
@@ -43,10 +127,29 @@ section.nav2 {
     grid-gap: 2rem;
     margin-bottom: 2rem;
     padding-top: 20px;
-    background-color: #e9c1d9;
+    background-color: #d81289;
+
+}
+.nav2 a{
+  color: #ffffff;
+  position: relative;
+  top: 60px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 25px;
+  text-decoration:none;
+
+}
+.nav2 a:hover{
+  color: #ebf8a1;
 }
 section img{
-    width: 10%;
+    width: 20%;
+}
+.navlogo{
+  width: max-content;
+  position: relative;
+  top: 10px;
+  left: 280px;
 }
 section.buttons{
 display: grid;
@@ -218,8 +321,8 @@ grid-gap: 2rem;
 
 span{
   position: relative;
-  left: 200px;
-  top: 170px;
+  left: 300px;
+  top: 120px;
   transform: translate(-50%, -50%);
   font-size:65px;
 	letter-spacing:0.1em;
@@ -269,21 +372,65 @@ h1 {
   justify-content: center;
 }
 .card {
-  /* Add shadows to create the "card" effect */
-  box-shadow: 0 4px 8px 0 rgba(241, 241, 241, 0.655);
+  box-shadow: 0 4px 8px 0 rgba(241, 8, 210, 0.655);
   transition: 0.3s;
   background-color: #ffffff;
   width: 20%;
+  position: relative
+  top: 100px;
 }
 
-/* On mouse-over, add a deeper shadow */
+
 .card:hover {
   box-shadow: 0 8px 16px 0 rgba(252, 252, 252, 0.2);
 }
 
-/* Add some padding inside the card container */
+
 .cardmedia {
   padding: 2px 16px;
   color: #e9c1d9;
   background-color: #313133;
+
+  }
+  body:before {
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 0;
+    height: 100%;
+    }
+
+h1 {
+  display: inline-block;
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif
+  font-size: 12em; 
+  text-shadow: .03em .03em 0 hsla(230,40%,50%,1);
+  }
+  h1:after {
+    content: attr(data-shadow);
+    position: absolute;
+    top: 685px; left: 1070px;
+    z-index: -1;
+    text-shadow: none;
+    background-image:
+      linear-gradient(
+        45deg,
+        transparent 45%,
+        hsla(48,20%,90%,1) 45%,
+        hsla(48,20%,90%,1) 55%,
+        transparent 0
+        );
+    background-size: .05em .05em;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  
+    animation: shad-anim 15s linear infinite;
+    }
+
+@keyframes shad-anim {
+  0% {background-position: 0 0}
+  0% {background-position: 100% -100%}
 }
+
+
